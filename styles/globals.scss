@@ -1,0 +1,163 @@
+// html,
+// body {
+//   padding: 0;
+//   margin: 0;
+//   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+//     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+// }
+
+// a {
+//   color: inherit;
+//   text-decoration: none;
+// }
+
+// * {
+//   box-sizing: border-box;
+// }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+a[href] {
+  color: #000;
+}
+
+.container {
+  width: 980px;
+  margin: 0 auto;
+  // background-color: green;
+}
+
+.navbar {
+  margin-top: 40px;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+
+  .nav-links {
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+    
+    .nav-item {
+      position: relative;
+      display: inline-block;
+      padding: 50px;
+      margin: 0 5px;
+      text-decoration: none;
+      transition: .3s;
+
+
+      &.active {
+        font-weight: 700;
+
+        // &:after {
+        //   content: " ";
+        //   position: absolute;
+        //   bottom: 0px;
+        //   left: 0;
+        //   width: 25px;
+        //   height: 2px;
+        //   background-color: #000;
+        // }
+      }
+
+      &:hover {
+        // background-color: lightgrey;
+        opacity: .2;
+        
+      }
+    }
+  }
+}
+
+.hero {
+  padding: 100px 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .text-wrapper {
+    // background-color: red;
+    width: 50%;
+
+    //modifier
+    &.w-full {
+      width: 100%;
+    }
+
+    .title {
+      font-size: 48px;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      line-height: 40px;
+      font-size: 22px;
+    }
+
+    .cta {
+      display: inline-block;
+      text-decoration: none;
+      padding: 20px 50px;
+      background-color: #000;
+      color: white;
+      border-radius: 5px;
+      margin-top: 20px;
+      transition: transform .3s;
+
+      &:hover {
+        transform: scale(1.1)
+      }
+    }
+  }
+
+  .image-wrapper {
+    text-align: right;
+    // background-color: blue;
+    width: 50%;
+  }
+}
+
+.portfolio-wrapper {
+  display: flex;
+  margin: 0 -10px;
+
+  .portfolio-item {
+    width: 50%;
+    padding: 0 10px;
+    text-align: center;
+
+    .portfolio-image {
+      max-width: 100%;
+    }
+
+    .portfolio-name {
+      font-size: 24px;
+      margin: 10px 0 20px;
+    }
+
+    .portfolio-category {
+      opacity: .5;
+    }
+  }
+
+
+}
